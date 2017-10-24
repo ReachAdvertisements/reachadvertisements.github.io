@@ -1,0 +1,21 @@
+.bullet-points {
+  margin-top: 100px;
+}
+
+.bp-header h1 {
+  font-weight: 300;
+}
+
+.bp-row {
+  @extend .row;
+  margin-bottom: 3rem;
+
+  .col-md-4 i {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+
+  .col-md-4 h3 {
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,24 @@
+---
+title: Blog
+permalink: /blog/
+layout: default
+---
+
+<div class="container-page blog-container">
+
+    <ul class="list-unstyled">
+		{% for post in site.posts %}	
+            <li class="media">
+                <div class="media-body">
+                    <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none"><h5 class="post-title">{{ post.title }}</h5></a>
+                    {% include author.html %}
+                    {{ post.description }}
+                    <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
+                        Read more
+                    </a>
+                </div>
+            </li>
+		{% endfor %}	
+    </ul>
+</div>
+

@@ -1,0 +1,15 @@
+{% for item in site.authors %}
+    {% assign name = item.path | split:"/" | last | split:"." | first %}
+    {% if name == post.author %}
+        {% assign author = item %}
+    {% endif %}
+{% endfor %}
+
+<p class="text-muted">
+    <i class="fa fa-calendar"></i>
+    {{ post.date | date: "%B %e, %Y" }}
+    <img src="{{ author.photoUrl }}" alt="Profile pic of {{ author.firstName }}" style="margin: 0 5px 0 20px; width: 20px; border-radius: 2px;">
+    <a href="{{ author.social[author.link] }}" style="color: inherit">
+        {{ author.firstName }} {{ author.lastName }}
+    </a>
+</p>

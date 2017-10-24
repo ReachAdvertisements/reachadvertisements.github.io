@@ -1,0 +1,36 @@
+title: Reach
+email: jacovdboschjr@gmail.com
+description: >-
+  Choose what you share, choose what you see. The future of intermarketing is here. Reach is the first blockchain 
+  that proposes a cross-platform solution to marketing that is benefitial to all parties involved.
+url: 'http://reach.jacovdbosch.nl'
+github_username:  jacovdbosch
+
+markdown: kramdown
+theme: minima
+
+collections:
+  - authors
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+  load_paths:
+    - _sass
+    - bower_components
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - bower_components
+include:
+  - _pages

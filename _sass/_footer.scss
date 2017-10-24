@@ -1,0 +1,33 @@
+$footer-height: 80px;
+
+.content {
+  min-height: 100%;
+  margin-bottom: -$footer-height;
+}
+
+.content:after {
+  content: "";
+  display: block;
+}
+
+.footer, 
+.content:after {
+  height: $footer-height;
+}
+
+
+
+.footer {
+  background: darken(#fff, 5%);
+  border-top: 1px solid darken(#fff, 10%);
+  padding: 20px 0;
+
+  a.nav-link {
+    color: inherit;
+  }
+
+  i.fa {
+    margin-right: 3px;
+  }
+}
+
